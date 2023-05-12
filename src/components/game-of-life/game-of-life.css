@@ -1,0 +1,86 @@
+.game-of-life {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    border: #333333 solid 1px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.cell.alive {
+    background-color: #333;
+    opacity: 1;
+}
+
+.cell.dead {
+    background-color: #333;
+    opacity: 0;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls > div {
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.row {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.new-generation {
+    opacity: 0;
+}
+
+.current-generation {
+    opacity: 1;
+}
+
+.speed-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.speed-controls label {
+    margin-right: 10px;
+}
+
+.speed-controls input[type="range"] {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
